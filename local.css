@@ -1,0 +1,54 @@
+body {
+  background: #f2f4f8;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* New main container to arrange cards side by side */
+.main-container {
+  display: flex;                  /* arrange children horizontally */
+  justify-content: center;        /* center horizontally */
+  align-items: flex-start;        /* align top of cards */
+  gap: 20px;                      /* spacing between cards */
+  flex-wrap: wrap;                /* wrap on small screens */
+  padding: 40px 20px;             /* some spacing from edges */
+}
+
+/* Cards */
+.sub-container, .sub2-container {
+  background: #ffffff;
+  border-radius: 12px;
+  width: 320px;
+  text-align: left;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Image */
+.post-img {
+  width: 100%;
+  display: block;
+  border-bottom: 3px solid #4a90e2;
+}
+
+/* Content */
+.text-sub-container {
+  padding: 16px;
+}
+
+/* Buttons */
+.read-more, .seconddoc-read-more {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #4a90e2;
+  padding: 8px 16px;
+  margin: 10px 0;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover, .seconddoc-read-more:hover {
+  background-color: #357abd;
+}
